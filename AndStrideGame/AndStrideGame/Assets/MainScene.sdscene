@@ -12,7 +12,23 @@ Hierarchy:
         - ref!! faf50c68-fceb-4038-961a-fa77b691307a
         - ref!! 8a2246cc-f7ec-47af-b4f1-f9129c32cde5
         - ref!! 882eccaf-181e-459f-beb5-6d69aab3aefc
+        - ref!! 1011b635-7ddd-486f-ab92-033dbcf6ed18
     Parts:
+        -   Entity:
+                Id: 1011b635-7ddd-486f-ab92-033dbcf6ed18
+                Name: UI
+                Components:
+                    9259ce531b9bc96aeb6170f4062f0a05: !TransformComponent
+                        Id: 749368ab-c968-412a-a25f-57240617cc0a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    31ea2c2103b7b7849190d8f5aa1b6986: !UIComponent
+                        Id: f6f120e6-336c-43d8-8b86-7b83948e2b0e
+                        Page: 8403fab4-eeb2-4b2c-86f4-16c28c90e448:Page
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
         -   Entity:
                 Id: 2b8d7065-ebed-4e12-b3f3-fe418b043be1
                 Name: Camera
