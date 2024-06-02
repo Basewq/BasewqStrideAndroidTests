@@ -7,11 +7,12 @@
   <ItemGroup>
     <PackageReference Include="Stride.Engine" Version="4.2.0.2122" />
 
-    <PackageReference Include="Stride.Video" Version="4.2.0.2122" />
     <PackageReference Include="Stride.Physics" Version="4.2.0.2122" />
-    <PackageReference Include="Stride.Navigation" Version="4.2.0.2122" />
     <PackageReference Include="Stride.Particles" Version="4.2.0.2122" />
     <PackageReference Include="Stride.UI" Version="4.2.0.2122" />
+    <!--These two are seemingly broken on Android so don't use-->
+    <!--<PackageReference Include="Stride.Navigation" Version="4.2.0.2122" />-->
+    <!--<PackageReference Include="Stride.Video" Version="4.2.0.2122" />-->
 
     <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.2.0.2122" IncludeAssets="build;buildTransitive" />
   </ItemGroup>

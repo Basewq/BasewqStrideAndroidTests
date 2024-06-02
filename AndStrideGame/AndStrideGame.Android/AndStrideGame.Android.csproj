@@ -20,6 +20,26 @@
     <AndroidResgenNamespace>$(AssemblyName)</AndroidResgenNamespace>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <!--Must disable trimming & AOT in both Debug & Release builds because underlying libraries do not support it-->
+    <PublishTrimmed>False</PublishTrimmed>
+    <RunAOTCompilation>False</RunAOTCompilation>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <!--Allow debugging in emulators-->
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <!--Use apk to manually deploy to emulator or own phone-->
+    <!--Use aab for Google Play store-->
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Core" Version="1.12.0.1" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AndStrideGame\AndStrideGame.csproj" />
   </ItemGroup>
